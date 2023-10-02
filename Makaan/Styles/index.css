@@ -277,19 +277,20 @@ h2 {
     align-items: center;
 }
 
-#cta-container > a {
+.cta-container > a {
     padding: 10px 20px;
-    border: 2px solid black;
     border-radius: 5px;
     text-decoration: none;
-    color: black;
-    font-weight: bold;
+    color: white;
+    font-weight: 1000;
     transition: box-shadow 0.3s ease-in-out;
+    background-color: rgb(0,185,142);
 }
 
-#cta-container > a:hover {
+.cta-container > a:hover {
     box-shadow: 5px 5px 0px black;
 }
+
 
 #section5-row > div {
     width: 50%;
@@ -299,4 +300,138 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: box-shadow 0.3s ease-in-out;
+    border : 2px solid grey;
+    background-color: #000000;
+}
+
+.nav-list li a:hover {
+    box-shadow: 5px 5px 0px black;
+}
+
+.nav-list li a:active {
+    box-shadow: 0px 0px black;
+    transform: translateY(5px);
+}
+
+.card-wrap {
+    justify-content: center;
+    align-items: center;
+}
+
+.card-wrap > div > div {
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.tab-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.tab-button {
+    margin-bottom: 10px;
+    margin-left: auto;
+}
+
+/* property cards */
+.cards-container > div {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.property-card {
+    border: 2px solid black;
+    margin: 10px;
+    width: 25%;
+}
+
+.property-card > div {
+    /* outline: 2px solid black; */
+}
+
+.property-specifications {
+    display: flex;
+    width: 100%;
+}
+
+.property-specifications > div {
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    border: rgb(0,185,142) dotted;
+    width: 33.33%;
+}
+
+/* Tags and image adjustment*/
+.tag-img-container .card-img {
+    position: relative;
+}
+
+.tag-img-container .card-img > img {
+    display: block;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.tag-img-container .card-tag {
+  position: absolute;
+  width: auto;
+  height: auto;
+  z-index: 2;
+ 
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 0px 20px;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(0,185,142);
+  border-radius: 10px;
+}
+
+/* Tags and image adjustment ends here*/
+
+.property-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  .property-info p,
+  .property-info h3,
+  .property-info .card-address {
+    margin: 6px;
+    padding: 0;
+  }
+
+.property-info > p > span {
+    color: rgb(0,185,142);
+    font-size: larger;
+    font-weight: 1000;
+}
+
+.property-info h3 {
+    font-weight: 1000;
+}
+
+.card-address {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#cta-container2 {
+    margin-top: 40px;
+    margin-left: 60px;
 }
