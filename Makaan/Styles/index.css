@@ -85,6 +85,10 @@ header {
 
 }
 
+.head-wrap  {
+    width: 100%;
+}
+
 .head-wrap .cta-box {
     margin-left: auto;
     
@@ -92,8 +96,24 @@ header {
 
 .right-side {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
+
+.right-side>div.nav-bar {
+    width: 80%;
+}
+
+.right-side>div.nav-bar>ul {
+    width: 100%;
+    justify-content: center;
+}
+
+.right-side>div.nav-bar>ul>li {
+    margin-right: 100px;
+}
+    
 
 .input-fields {
     display: flex;
@@ -230,6 +250,52 @@ h2 {
 }
 
 #section2 > div > div > div.row2 > div > div > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.company-info-list > li {
+   list-style: none;
+}
+
+.company-info-list > li > p {
+    display: inline;
+}
+
+#company-info-row {
+    display: flex;
+}
+
+#company-info-row > div {
+    width: 50%;
+}
+
+#company-info-row > div > div > div.image-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cta-container > a {
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#cta-container > a:hover {
+    box-shadow: 5px 5px 0px black;
+}
+
+#section5-row > div {
+    width: 50%;
+}
+
+#section5-row > div > div.left-col {
     display: flex;
     justify-content: center;
     align-items: center;
